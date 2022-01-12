@@ -11,10 +11,12 @@
     <main>
       <section class="form-container">
         <h2 class="form-header">Register</h2>
-        <p class="form-description">Create ypur account. It`s free and only takes a minute.</p>
+        <p class="form-description">
+          Create ypur account. It`s free and only takes a minute.
+        </p>
         <form action="" class="form">
           <fieldset class="form-fieldset">
-            <input 
+            <input
               type="text"
               name="first-name"
               placeholder="First Name"
@@ -53,14 +55,25 @@
             type="password"
             placeholder="Confirm Password"
             required
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
           />
           <fieldset class="form-fieldset form-fieldset-policy">
-            <input type="checkbox" id="form-checkbox" required/>
+            <input type="checkbox" id="form-checkbox" required />
             <label for="form-checkbox"
               >I accept the
-              <a class="policy-link" target="_blank" href="https://www.google.com/">Terms of Use</a>
+              <a
+                class="policy-link"
+                target="_blank"
+                href="https://www.google.com/"
+                >Terms of Use</a
+              >
               &
-              <a class="policy-link" target="_blank" href="https://www.google.com/">Privacy Policy</a>.
+              <a
+                class="policy-link"
+                target="_blank"
+                href="https://www.google.com/"
+                >Privacy Policy</a
+              >.
             </label>
           </fieldset>
           <button class="form-button" type="submit">Register Now</button>
