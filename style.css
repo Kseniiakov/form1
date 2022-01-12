@@ -143,4 +143,13 @@ body,
 
 .form-input:required:valid {
   background-color: #bcffbd;
+  border: 1px solid #53ab54;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input:required:focus:invalid {
+  border: 1px solid rgb(255, 146, 146);
 }
